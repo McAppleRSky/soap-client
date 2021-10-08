@@ -4,5 +4,5 @@ gradle
 .idea
 gradlew
 gradlew.bat
-#src/main/resources/.credentials
-#src/test/resources/.credentials
+src/main/resources/.credentials
+src/test/resources/.credentials
