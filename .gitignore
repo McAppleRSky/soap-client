@@ -1,7 +1,8 @@
-src/main/resources/.credentials
 .git
 .gradle
 gradle
 .idea
 gradlew
 gradlew.bat
+src/main/resources/.credentials
+src/test/resources/.credentials
