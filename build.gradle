@@ -9,11 +9,11 @@ targetCompatibility = JavaVersion.VERSION_11
 
 ext {
     fingBugsVersion = "3.0.2"
-//    junit5Version = "5.8.1"
+    junitVersion = "5.8.1"
 //    lombokVersion = "1.18.20"
 
-//    springVersion = "5.3.10"
-//    springBootVersion = "2.5.5"
+    springVersion = "5.3.10"
+    springBootVersion = "2.5.5"
 //    jacksonVersion = "2.9.8"
 //    wsdl4jVersion = "1.6.3"
 //    jaxbXjcVersion = "3.0.2"
@@ -26,13 +26,14 @@ repositories {
 }
 
 dependencies {
-//    testImplementation "org.junit.jupiter:junit-jupiter-api:junit5Version"
-//    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:junit5Version"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 //    compileOnly "org.projectlombok:lombok:$lombokVersion"
 //    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
     compileOnly "com.google.code.findbugs:jsr305:$fingBugsVersion"
+    implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
 }
 
-/*test {
+test {
     useJUnitPlatform()
-}*/
+}
