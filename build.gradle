@@ -10,7 +10,7 @@ targetCompatibility = JavaVersion.VERSION_11
 ext {
     fingBugsVersion = "3.0.2"
     junitVersion = "5.8.1"
-//    lombokVersion = "1.18.20"
+    lombokVersion = "1.18.20"
 
     springVersion = "5.3.10"
     springBootVersion = "2.5.5"
@@ -26,12 +26,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
-//    compileOnly "org.projectlombok:lombok:$lombokVersion"
-//    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
-    compileOnly "com.google.code.findbugs:jsr305:$fingBugsVersion"
-    implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
+    testImplementation  "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testRuntimeOnly     "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    compileOnly         "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    compileOnly         "com.google.code.findbugs:jsr305:$fingBugsVersion"
+    implementation      "org.springframework.boot:spring-boot-starter:$springBootVersion"
+    testImplementation  "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
 }
 
 test {

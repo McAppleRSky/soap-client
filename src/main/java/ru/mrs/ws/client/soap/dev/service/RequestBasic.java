@@ -1,21 +1,14 @@
 package ru.mrs.ws.client.soap.dev.service;
 
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.mrs.ws.client.soap.dev.service.base.TargetUrl;
+import ru.mrs.ws.client.soap.dev.config.description.iDescriptionServerRequest;
 
 @Service
 public class RequestBasic implements iBaseRequest {
-    @Value("${request.wsd.url.host}")
-    private String wsdHostUrl;
-    @Value("${request.wsd.url.hostname}")
-    private String wsdHostnameUrl;
-    @Value("${request.wsd.url.target}")
-    private String _targetUrl;
-    private TargetUrl targetUrl;
-    {
-        targetUrl = TargetUrl.valueOf(_targetUrl.toUpperCase());
-    }
+    @Autowired
+    private iDescriptionServerRequest descriptionServerRequest;
+
     @Override
     public String requestDescription() {
         return null;
@@ -25,4 +18,5 @@ public class RequestBasic implements iBaseRequest {
     public String requestSchema() {
         return null;
     }
+
 }

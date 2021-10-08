@@ -1,4 +1,4 @@
-package ru.mrs.ws.client.soap.dev.config;
+package ru.mrs.ws.client.soap.dev.config.description;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
