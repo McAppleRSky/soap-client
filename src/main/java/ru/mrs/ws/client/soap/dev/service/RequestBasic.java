@@ -14,9 +14,6 @@ public class RequestBasic implements iBaseRequest {
         return null;
     }
 
-    @Override
-    public String requestSchema() {
-        return null;
-    }
+//    @Override public String requestSchema() {return null;}
 
 }

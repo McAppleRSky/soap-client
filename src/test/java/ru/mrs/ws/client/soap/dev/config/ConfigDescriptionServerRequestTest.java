@@ -10,11 +10,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 @SpringBootTest
-class TargetServerRequestTest {
+class ConfigDescriptionServerRequestTest {
     @Autowired
     private iDescriptionServerRequest descriptionServerRequest;
     @Test
-    void mainTest() {
+    void moduleTest() {
         URL descriptionUrl = null;
         try {
             descriptionUrl = descriptionServerRequest.getDescriptionUrl();
