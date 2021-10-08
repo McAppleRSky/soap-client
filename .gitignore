@@ -1,0 +1,7 @@
+src/main/resources/.credentials
+.git
+.gradle
+gradle
+.idea
+gradlew
+gradlew.bat
